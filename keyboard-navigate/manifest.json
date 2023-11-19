@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Search Keyboard Navigation",
+    "version": "1.0",
+
+    "description": "Navigate through google search results with w and s arrows",
+
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.google.com/search*"
+            ],
+            "js": [
+                "keyboard-navigate.js"
+            ]
+        }
+    ]
+
+
+}
